@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+Author: Joseph Murphy
+Date:   3/28/2018
+-->
+
+  <head>
+    <meta charset="utf-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+
+
+    <nav>
+      <a href="../index.html">Home</a>
+    </nav>
+
+    <h1>Adviser Appointment</h1>
+    <div class="container">
+
+		<form method="get" action="thankyou.html" >
+      <fieldset>
+        <legend>
+          Contact Information
+        </legend>
+          First Name:
+		      <input autofocus id="firstName" type = "text" name="firstName" placeholder="First Name" required/>
+          Last Name:
+		      <input id="lastName" type = "text" name="lastName" placeholder="Last Name" required />
+          Email:
+		      <input id="email" placeholder="EMail" required />
+
+      </fieldset>
+
+      <fieldset>
+        <legend>
+          Reservation Request
+        </legend>
+        <div class="reservation">
+
+          <select name="Advisor">
+            <option value="Tiffany Ford">Tiffany Ford </option>
+            <option value="Kirsten Markley">Kirsten Markley</option>
+            <option value="Renee Riley">Renee Riley</option>
+          </select>
+
+          <select name="month">
+            <option value="January"> January </option>
+            <option value="February"> February </option>
+            <option value="March"> March </option>
+            <option value="April"> April </option>
+            <option value="May"> May </option>
+            <option value="June"> June </option>
+            <option value="July"> July </option>
+            <option value="August"> August </option>
+            <option value="September"> September </option>
+            <option value="October"> October </option>
+            <option value="November"> November </option>
+            <option value="December"> December </option>
+          </select>
+
+          <input type="number" id="day" value="1"
+            step="1" min="1"  max="31" />
+
+
+          <input type="radio" name="timeOfDay" value="AM" checked> AM
+          <input type="radio" name="timeOfDay" value="PM" > PM
+        </div>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>
+          What Classes Do You Plan On Taking
+        </legend>
+          <input type="radio" name="Java" value="Yes"> Java
+          <input type="radio" name="C#" value="Yes"> C#
+          <input type="radio" name="Web Dev" value="Yes"> Web Dev
+          <input type="radio" name="Database" value="Yes"> Database
+          <input type="radio" name="Systems Analysis and Design"
+            value="Yes"> Systems Analysis and Design
+      </fieldset>
+
+      <fieldset>
+        <legend>Additional Info</legend>
+          <textarea id="comments" name="comments" placeholder="Any additional info"></textarea>
+      </fieldset>
+
+
+		    <input type="submit" value="submit" class="submit">
+
+      </form>
+    </div>
+
+  </body>
+</html>
