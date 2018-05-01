@@ -8,17 +8,17 @@ Date:   3/28/2018
 
   <head>
     <meta charset="utf-8">
-    <title>Registration Form</title>
+    <title>Payment</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
 
 
     <nav>
-      <a href="../index.html">Home</a>
+      <a href="index.html">Home</a>
     </nav>
 
-    <h1>Adviser Appointment</h1>
+    <h1>Payment Form</h1>
     <div class="container">
 
 		<form method="get" action="thankyou.html" >
@@ -37,14 +37,14 @@ Date:   3/28/2018
 
       <fieldset>
         <legend>
-          Reservation Request
+          Destination
         </legend>
         <div class="reservation">
 
-          <select name="Advisor">
-            <option value="Tiffany Ford">Tiffany Ford </option>
-            <option value="Kirsten Markley">Kirsten Markley</option>
-            <option value="Renee Riley">Renee Riley</option>
+          <select name="Destination">
+            <option value="Belize">Belize </option>
+            <option value="Hawaii">Hawaii</option>
+            <option value="Jamaica">Jamaica</option>
           </select>
 
           <select name="month">
@@ -66,26 +66,24 @@ Date:   3/28/2018
             step="1" min="1"  max="31" />
 
 
-          <input type="radio" name="timeOfDay" value="AM" checked> AM
-          <input type="radio" name="timeOfDay" value="PM" > PM
         </div>
 
       </fieldset>
 
       <fieldset>
         <legend>
-          What Classes Do You Plan On Taking
+          Payment Type
         </legend>
-          <input type="radio" name="Java" value="Yes"> Java
-          <input type="radio" name="C#" value="Yes"> C#
-          <input type="radio" name="Web Dev" value="Yes"> Web Dev
-          <input type="radio" name="Database" value="Yes"> Database
-          <input type="radio" name="Systems Analysis and Design"
-            value="Yes"> Systems Analysis and Design
+          <input type="radio" name="Visa" value="Yes"> Visa
+          <input type="radio" name="MasterCard" value="Yes"> MasterCard
+          <input type="radio" name="Chase" value="Yes"> Chase
+          <input type="radio" name="PayPal" value="Yes"> PayPal
+          <input type="radio" name="Discover"
+            value="Yes"> Discover
       </fieldset>
 
       <fieldset>
-        <legend>Additional Info</legend>
+        <legend>Questions and additional booking</legend>
           <textarea id="comments" name="comments" placeholder="Any additional info"></textarea>
       </fieldset>
 
