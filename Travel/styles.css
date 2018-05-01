@@ -9,6 +9,7 @@ body, html {
 }
 
 header{
+  background-image: url(2.jpg);
 	box-sizing: border-box;
     min-height: 100vh;
     padding: 30vw 0 5vw;
@@ -22,6 +23,31 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
 	font-family: "Luna";
+}
+.
+.carousel {
+    overflow: hidden;
+	width:100%;
+}
+.carousel-inner {
+	width:100%;
+}
+.carousel .item {
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -ms-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+.carousel .active.left, .carousel .active.right {
+    left:0;
+    opacity:0;
+    z-index:2;
+}
+.carousel .next, .carousel .prev {
+    left:0;
+    opacity:1;
+    z-index:1;
 }
 h2{
 	text-align: center;
@@ -45,30 +71,14 @@ header * {
     text-align: center;
     margin: 0;
     padding: 1em 0;
-}ï»¿
+}
+
 
 body p {
 	color: black;
 	text-align: center;
 }
 
-.cols
-{
-  padding: 50px 10px 5px 10px;
-  line-height: 1.8;
-}
-
-.col1, .col2, .col3
-{
-  float: left;
-  width: 30%;
-  margin-right: 25px;
-  background-color: #ffffff;
-}
-.col3
-{
-  margin-right: 5%;
-}
 .bar
 {
   width: 100%;
@@ -85,7 +95,7 @@ body p {
 .navcont{
 	list-style: none;
 	font-weight: 300;
-	width: 80%
+	width: 100%
 	margin: 0 auto;
 	padding: 0;
 	background-color: #dffbef;
@@ -115,6 +125,7 @@ nav a:hover{
 }
 .navigation{
 	background-color: #dffbef;
+	width:100%;
 }
 
 nav a::before{
@@ -143,42 +154,8 @@ img
   padding: 10px;
 }
 
-@media screen and (max-width: 740px)
-{
-  .main-content
-  {
-    width: 100%;
-    float: none;
-  }
-  .bar
-  {
-    float: none;
-    width: 100%;
-  }
+.row {
+	position: relative;
+	right: 110px;
 }
-@media screen and (max-width: 500px)
-{
-  img
-  {
-    display: none;
-  }
-  .bar
-  {
-    display: none;
-  }
-  .col1, .col2, .col3
-  {
-    float: none;
-    background-color: #fff;
-    width: 100%;
-  }
 
-}
-.col1, .col2
-{
-  width: 45%;
-}
-.col3
-{
-  width: 100%
-}
